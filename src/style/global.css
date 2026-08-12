@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kranky&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -7,4 +9,49 @@
 .box{
     margin: 0 auto;
     width: 90%;
+    padding: 5px;
+}
+
+body{
+    background-color: rgb(186, 241, 167);
+}
+
+img{
+    width: 50px;
+}
+
+header h1{
+    font-family: "Kranky", serif;
+}
+
+header .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    background-color: #A795B6;
+    margin-bottom: 5px;
+}
+
+#logotipo{
+    display: flex;
+    align-items: center;
+    font-size: 30px
+}
+
+#user-icon,#logo{
+    width: 75px
+}
+
+footer{
+    background-color: #5C627A;
+    margin-top: 5px;
+    height: 40px;
+    
+}
+
+main{
+    background-color: #f5dece;
 }

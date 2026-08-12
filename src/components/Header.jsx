@@ -5,9 +5,9 @@ function Header(){
   return(
     <header>
         <div className="box">
-            <div>
+            <div id="logotipo">
                 <img src={logo_img} alt="Logo da página" id="logo" />
-                <h1 id="site-name">Tô Na Meta</h1>
+                <h1 id="site-name">TôNaMeta</h1>
             </div>
 
             <img src={user_icon_img} alt="Ícone do usuário" id="user-icon" />
