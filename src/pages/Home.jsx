@@ -15,7 +15,7 @@ function Home(){
     ]
 
     return (
-        <div className='whole-wrapper'>
+        <div className='whole-wrapper home'>
             <Header />
             <main>
                 <div className="box">
