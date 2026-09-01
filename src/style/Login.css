@@ -1,29 +1,35 @@
-main.login .box{
+.login main .box{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.form-card.login{
-    width: 50%;
-    height: fit-content;
-    padding: 20px;
-}
-
-main.login h1{
+.login h2{
     text-align: center;
 }
 
-main.login .input-field{
+.login .form-card{
+    width: 35%;
+    min-height: 35dvh;
+    padding: 20px;
+    background-color: rgb(183, 211, 235);
+}
+
+.login h2{
+    text-align: center;
+}
+
+.login main .input-field{
     display: flex;
     flex-direction: column;
     margin: 10px 0;
 }
 
-main.login button{
+.login main button{
     margin: 0 auto;
     display: block;
 
     height: 30px;
     width: 25%;
 }
+

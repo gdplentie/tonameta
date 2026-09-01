@@ -10,8 +10,10 @@
     margin: 0 auto;
     width: 90%;
     padding: 5px;
-    height: inherit;
-    background-color: red;
+}
+
+header,article,section,main,footer{
+    display: flex;
 }
 
 body{

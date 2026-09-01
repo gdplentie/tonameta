@@ -4,13 +4,13 @@ import "../style/Login.css"
 
 function Login() {
     return (
-        <div className="whole-wrapper">
+        <div className="whole-wrapper login">
             <Header />
 
-            <main className="login">
+            <main>
                 <div className="box">
-                    <div className="form-card login">
-                        <h1>Faça Login!</h1>
+                    <div className="form-card">
+                        <h2>Faça Login!</h2>
                         <form onSubmit={(event) => { event.preventDefault() }}>
                             <div className="input-field">
                                 <label>Nomde de usuário</label>
