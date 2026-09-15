@@ -10,9 +10,10 @@
 
 .login .form-card{
     width: 35%;
-    min-height: 35dvh;
     padding: 20px;
     background-color: rgb(183, 211, 235);
+    border: 1px solid #000;
+    border-radius: 5px;
 }
 
 .login h2{
@@ -32,4 +33,3 @@
     height: 30px;
     width: 25%;
 }
-

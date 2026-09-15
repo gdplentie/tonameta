@@ -1,6 +1,12 @@
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+import Botao from "../components/Botao"
 import "../style/Login.css"
+
+
+function salvar(){
+    alert("Dados Salvos")
+}
 
 function Login() {
     return (
@@ -22,7 +28,7 @@ function Login() {
                                 <input type="password" />
                             </div>
 
-                            <button>Login!</button>
+                            <Botao texto="Faça Login!" aoClicar={salvar}/>
                         </form>
                     </div>
                 </div>
