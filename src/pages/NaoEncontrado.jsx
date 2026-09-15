@@ -6,9 +6,9 @@ function NaoEncontrado(){
     return(
         <div className="whole-wrapper">
             <Header />
-
-            <main className="nao-encontrado">
-                <p>Não há nada a ser feito aqui...</p>
+            
+            <main className=".nao-encontrado">
+                <p>Não há nada a ser fazido...</p>
             </main>
 
             <Footer />

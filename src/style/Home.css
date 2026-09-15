@@ -1,144 +1,45 @@
-.home main .box{
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-}
-
-.home .hero{
-    position: relative;
-    overflow: hidden;
-    padding: 58px 28px 44px;
-    border: 3px solid #000;
-    border-radius: 14px;
-    background: #a99cd6;
-    isolation: isolate;
-}
-
-.home .hero::before,
-.home .hero::after{
-    content: "";
-    position: absolute;
-    width: 220px;
-    height: 220px;
-    background: rgba(255, 255, 255, 0.12);
-    transform: rotate(20deg);
-    z-index: -1;
-}
-
-.home .hero::before{
-    top: -90px;
-    left: -60px;
-}
-
-.home .hero::after{
-    right: -70px;
-    bottom: -110px;
-    transform: rotate(65deg);
-}
-
-.home .hero h2{
-    max-width: 820px;
-    margin: 0 auto;
-    color: #fff;
+.home h2{
     text-align: center;
-    font-size: clamp(28px, 5vw, 50px);
-    line-height: 1.12;
-}
-
-.home .hero p{
-    max-width: 680px;
-    margin: 20px auto 0;
-    text-align: center;
-    font-size: clamp(16px, 2.5vw, 20px);
-    line-height: 1.5;
-}
-
-.home .cartoes{
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 16px;
-}
-
-.home .cartao-intro{
-    min-height: 260px;
-    padding: 22px 18px;
-    border: 3px solid #000;
-    border-radius: 10px;
-    background: #fff;
-    box-shadow: 7px 7px 0 #000;
-}
-
-.home .cartao-intro:nth-child(2){
-    transform: rotate(-1deg);
-}
-
-.home .cartao-intro:nth-child(3){
-    transform: translateY(8px) rotate(1deg);
-}
-
-.home .cartao-intro:nth-child(4){
-    transform: rotate(-2deg);
+    margin-bottom: 15px;
 }
 
 .home .cartao-intro h3{
-    margin-bottom: 14px;
-    color: #a99cd6;
     text-align: center;
-    font-size: 24px;
-    line-height: 1.2;
+    font-family: "Kranky", serif;
+    margin-bottom: 10px;
 }
 
-.home .cartao-intro p{
-    font-size: 16px;
-    line-height: 1.5;
+.home .cartao-intro{
+    width: 20%;
+    background-color: #BBCAD5;
+    padding: 5px;
+    border: 4px solid #000;
+    font-size: 20px;
+}
+
+.home .cartoes{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.home main .box{
+    display: flex;
+    flex-direction: column;
 }
 
 .home .intro-botao{
-    align-self: center;
-    min-width: 180px;
-    padding: 10px 24px;
-    border: 3px solid #000;
-    border-radius: 8px;
-    background: #85e08a;
-    color: #000;
-    cursor: pointer;
-    font-size: 20px;
-    transition: transform 160ms ease, box-shadow 160ms ease;
+    width: 20%;
+    margin: 0 auto;
+    height: 40px;
+    background-color: #0C0C31;
+    border: 4px solid #000;
+    color: #fff;
+
+    transition: 1s all linear;
 }
 
 .home .intro-botao:hover{
-    transform: translateY(-2px);
-    box-shadow: 4px 4px 0 #000;
-}
-
-.home .intro-botao:focus-visible{
-    outline: 3px solid #5b8def;
-    outline-offset: 3px;
-}
-
-@media (max-width: 850px){
-    .home .cartoes{
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 540px){
-    .home main .box{
-        width: min(94%, 1040px);
-    }
-
-    .home .hero{
-        padding: 42px 18px 32px;
-    }
-
-    .home .cartoes{
-        grid-template-columns: 1fr;
-    }
-
-    .home .cartao-intro,
-    .home .cartao-intro:nth-child(2),
-    .home .cartao-intro:nth-child(3),
-    .home .cartao-intro:nth-child(4){
-        transform: none;
-    }
+    border-radius: 5px;
+    background-color: #222272;
 }
