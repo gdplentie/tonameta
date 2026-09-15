@@ -1,35 +1,85 @@
 .login main .box{
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-.login h2{
-    text-align: center;
+.login .form-wrapper{
+    min-height: fit-content;
+    display: flex;
+    justify-content: space-between;
 }
 
-.login .form-card{
-    width: 35%;
-    padding: 20px;
-    background-color: rgb(183, 211, 235);
-    border: 1px solid #000;
-    border-radius: 5px;
+.login .form-wrapper > form, .login .form-wrapper > div{
+    width: 45%;
+    padding: 5px;
 }
 
-.login h2{
-    text-align: center;
-}
-
-.login main .input-field{
+.login form{
     display: flex;
     flex-direction: column;
-    margin: 10px 0;
 }
 
-.login main button{
+.login .input-field{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.login .input-field label{
+    text-align: center;
+    font-size: 24px;
+}
+
+.login h2{
+    font-family: 'Kranky';
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+    background-color: #e2c8b6;
+}
+
+.login .papel{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #000;
+    flex: 1;
+}
+
+.login .input-field input{
+    font-size: 20px;
+    padding: 5px;
+    border: 2px solid #000;
+}
+
+.login .bvdv{
+    display: flex;
+    flex-direction: column;
+}
+
+.login form small{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login .botao-entrar{
+    background-color: rgb(43, 50, 92);
+}
+
+.login .botao-registrar{
+    background-color: rgb(114, 63, 63);
+}
+
+.login button{
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    height: 35px;
+    width: 200px;
     margin: 0 auto;
-    display: block;
-
-    height: 30px;
-    width: 25%;
 }
+
+.login button:hover{
+    background-color: rgb(60, 138, 58);
+}
+

@@ -1,6 +1,6 @@
-function Botao({texto, aoClicar}){
+function Botao({texto, aoClicar=()=>{}, className = ""}){
     return(
-        <button type="submit" onClick={aoClicar}>
+        <button type="submit" onClick={aoClicar} className={className}>
             {texto}
         </button>
     )
