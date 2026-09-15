@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Kranky&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+
+:root{
+    font-family: 'Margarine', cursive;
+    color: #1a1a1a;
+    background: #f5ddc3;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
 
 *{
     padding: 0;
@@ -6,61 +14,74 @@
     box-sizing: border-box;
 }
 
-.box{
-    margin: 0 auto;
-    width: 90%;
-    padding: 5px;
-}
-
-header,article,section,main,footer{
-    display: flex;
-}
-
 body{
-    background-color: rgb(186, 241, 167);
+    min-width: 320px;
+    min-height: 100vh;
+    background: #f5ddc3;
 }
 
-img{
-    width: 50px;
+button,
+input{
+    font: inherit;
 }
 
-header h1{
-    font-family: "Kranky", serif;
+a{
+    color: inherit;
+}
+
+.box{
+    width: min(92%, 1040px);
+    margin: 0 auto;
+}
+
+header{
+    position: relative;
+    z-index: 2;
+    padding: 18px 0;
+    background: #a99cd6;
+    border-bottom: 3px solid #000;
 }
 
 header .box{
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
 }
 
-header{
-    background-color: #A795B6;
-    margin-bottom: 5px;
+.site-mark{
+    color: #fff;
+    font-size: clamp(30px, 6vw, 48px);
+    line-height: 1;
+    text-decoration: none;
 }
 
-#logotipo{
-    display: flex;
-    align-items: center;
-    font-size: 30px
-}
-
-#user-icon,#logo{
-    width: 75px
-}
-
-footer{
-    background-color: #5C627A;
-    margin-top: 5px;
-    height: 40px;
-    
+.header-badge{
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    background: #85e08a;
+    font-size: 28px;
 }
 
 main{
-    background-color: #f5dece;
     flex: 1;
+    padding: 36px 0 44px;
 }
 
+footer{
+    min-height: 54px;
+    display: flex;
+    align-items: center;
+    background: #d9d9d9;
+    border-top: 3px solid #000;
+}
+
+footer small{
+    font-size: 14px;
+}
 
 .whole-wrapper{
     display: flex;

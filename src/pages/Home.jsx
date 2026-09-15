@@ -9,9 +9,9 @@ function Home(){
 
     const cartoes = [
         { titulo: "Crie Cadernos", texto: "Crie cadernos, organizações de papéis que funcionam como anotações, simulando um caderno real" },
-        { titulo: "Anote Em Papéis", texto: "Estilize o seu texto de forma simples sem muita complexidade" },
-        { titulo: "Marcação", texto: "Adicione etiquetas, que lhe permitiram organizar as suas notas de forma dinâmica" },
-        { titulo: "Estilização Simples", texto: "Estilize o seu texto de forma simples sem muita complexidade" }
+        { titulo: "Anote Em Papéis", texto: "Registre suas ideias em blocos visuais simples, com uma experiência direta e sem excesso de complexidade." },
+        { titulo: "Marcação", texto: "Adicione etiquetas para organizar suas notas e encontrar cada assunto com mais facilidade." },
+        { titulo: "Estilização Simples", texto: "Estilize o seu texto de forma simples, mantendo o foco na organização e no conteúdo." }
     ]
 
     return (
@@ -19,13 +19,16 @@ function Home(){
             <Header />
             <main>
                 <div className="box">
-                    <h2>Um ambiente confortável que faz a sua organização fluir</h2>
+                    <section className="hero">
+                        <h2>Um ambiente confortável que faz a sua organização fluir</h2>
+                        <p>Uma área simples para reunir cadernos, anotações e marcações em um só lugar.</p>
+                    </section>
 
-                    <div className="cartoes">
+                    <section className="cartoes" aria-label="Recursos do TôNaMeta">
                         {cartoes.map((cartao, i) => (
                             <CartaoIntro key={i} titulo={cartao.titulo} texto={cartao.texto} />
                         ))}
-                    </div>
+                    </section>
 
                     <button className="intro-botao" onClick={() => navigate("/login")}>Faça Login!</button>
                 </div>

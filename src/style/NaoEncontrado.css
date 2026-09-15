@@ -1,5 +1,20 @@
-main.nao-encontrado{
+.whole-wrapper:not(.home):not(.login) main{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 48px 20px;
+}
+
+main.nao-encontrado{
+    text-align: center;
+}
+
+main.nao-encontrado p{
+    width: min(680px, 100%);
+    padding: 40px 28px;
+    border: 3px solid #000;
+    border-radius: 12px;
+    background: #d9d9d9;
+    box-shadow: 10px 10px 0 #000;
+    font-size: clamp(24px, 4vw, 38px);
 }

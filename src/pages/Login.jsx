@@ -3,7 +3,6 @@ import Footer from "../components/Footer"
 import Botao from "../components/Botao"
 import "../style/Login.css"
 
-
 function salvar(){
     alert("Dados Salvos")
 }
@@ -19,13 +18,13 @@ function Login() {
                         <h2>Faça Login!</h2>
                         <form onSubmit={(event) => { event.preventDefault() }}>
                             <div className="input-field">
-                                <label>Nomde de usuário</label>
-                                <input type="text" />
+                                <label htmlFor="usuario">Nome de usuário</label>
+                                <input id="usuario" name="usuario" type="text" />
                             </div>
 
                             <div className="input-field">
-                                <label>Senha</label>
-                                <input type="password" />
+                                <label htmlFor="senha">Senha</label>
+                                <input id="senha" name="senha" type="password" />
                             </div>
 
                             <Botao texto="Faça Login!" aoClicar={salvar}/>
