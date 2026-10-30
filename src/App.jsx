@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes} from "react-router-dom"
 import Home from "./pages/Home"
 import Login from "./pages/Login"
+import Workspace from "./pages/Workspace"
 import NaoEncontrado from "./pages/NaoEncontrado"
 
 
@@ -10,6 +11,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/login" element={<Login/>}/>
+            <Route path="/workspace" element={<Workspace/>}/>
             <Route path="*" element={<NaoEncontrado/>}/>
         </Routes>
     </BrowserRouter>

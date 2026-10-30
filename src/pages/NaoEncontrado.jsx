@@ -7,7 +7,8 @@ function NaoEncontrado(){
         <div className="whole-wrapper">
             <Header />
             
-            <main className=".nao-encontrado">
+            <main className="nao-encontrado">
+                <p>Essa página não existe, sentimos muito...</p>
                 <p>Não há nada a ser fazido...</p>
             </main>
 

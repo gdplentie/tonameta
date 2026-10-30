@@ -28,7 +28,8 @@ header h1{
     font-family: "Kranky", serif;
 }
 
-header .box{
+header .welcome{
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,4 +67,27 @@ main{
     display: flex;
     flex-direction: column;
     min-height: 100dvh;
+}
+
+.nav-link{
+    color: #23426e;
+    text-decoration: none;
+    
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+.nav-link.active{
+    color: #de3a21;
+}
+
+nav{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
