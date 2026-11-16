@@ -83,3 +83,9 @@
     background-color: rgb(60, 138, 58);
 }
 
+.login #erro{
+    color: red;
+    height: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
